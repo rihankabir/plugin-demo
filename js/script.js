@@ -331,19 +331,21 @@ $('.rating').starRating({
   starsSize: 4, // em
   stars: 5,
 });
- var swiler = new Swiper(".miSwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
+ $(document).ready(function () {
+  var swiler = new Swiper(".miSwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+});
