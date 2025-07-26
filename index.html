@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery practice</title>
+  <link rel="stylesheet" type="text/css" href="res/progressBar.min.css">
+  <link rel="stylesheet" href="res/mqscroller.min.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> 
+<link rel="stylesheet"  href="res/nivo-slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="res/aos/aos.css">
+  <link rel="stylesheet" href="res/slick/slick.css">
+  <link rel="stylesheet" href="res/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css" />
+  <link rel="stylesheet"  href="res/aos/lightbox.min.css">
+  <link rel="stylesheet"  href="res/jquery.imagecompare.min.css">
+  <link rel="stylesheet" href="res/aos/preloader.css">
+  <link rel="stylesheet"  href="res/aos/style.min.css">
+     <link rel="stylesheet" href="res/aos/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="rate text-center">
+  <div class="rating"></div>
+</div>
+<section>
+  <div class="container">
+<div class="row mt-5">
+<div class="col-lg-12">
+<ul class="jqueryImageCompare">
+  <li data-image="1.jpg"  data-title="Image title">
+    <img src="images/1.jpg" class="img-fluid">
+  </li>
+  <li data-image="2.jpg" data-title="Image title">
+    <img src="images/2.jpg" class="img-fluid">
+  </li>
+  <li data-image="3.jpg" data-title="Image title">
+    <img src="images/3.jpg" class="img-fluid">
+  </li>
+  <li data-image="4.jpg" data-title="Image title">
+    <img src="images/4.jpg" class="img-fluid">
+  </li>
+  <li data-image="5.jpg">
+    <img src="images/5.jpg" class="img-fluid">
+  </li>
+<li data-image="5.jpg">
+    <img src="images/5.jpg" class="img-fluid">
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+
+<section>
+  <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div id="easy-filter-wrap">
+  <!-- Filter Controls -->
+  <button type="button "data-easyfilter="*" class="btn btn-primary"> All </button>
+  <button type="button "data-easyfilter="item01" class="btn btn-outline-danger"> Item 01 </button>
+  <button type="button "data-easyfilter="item02" class="btn btn-success"> Item 02 </button>
+  <button type="button "data-easyfilter="item03" class="btn btn-danger"> Item 03 </button>
+  <!-- Filterable Elements Here -->
+  <div data-easyitem="item01"><img src="images/data.jpg" class="img-fluid">  </div>
+  <div data-easyitem="item02"> <img src="images/data1.jpg" class="img-fluid"> </div>
+  <div data-easyitem="item03"> <img src="images/data2.jpg" class="img-fluid"> </div>
+</div>
+<div class="hold">
+<label data-easyfilter="*">
+  <input type="radio" name="options" id="option1" checked> All
+</label>
+<label data-easyfilter="item01">
+  <input type="radio" name="options" id="option2"> Item 01
+</label>
+<label data-easyfilter="item02">
+  <input type="radio" name="options" id="option3"> Item 02
+</label>
+<label data-easyfilter="item03">
+  <input type="radio" name="options" id="option3"> Item 03
+</label>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="login">
+  <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<a id="trigger" data-url="external.html" href="#">
+  Open Layer
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="progress">
+  <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="ab-progress" data-progress data-value="70"data-title="HTML5"></div>
+<div class="ab-progress" data-progress data-value="75"data-title="CSS3"></div>
+<div class="ab-progress" data-progress data-value="90"data-title="Jquery"></div>
+<div class="ab-progress" data-progress data-value="90"data-title="bootstrap"></div>
+</div>
+</div>
+  </div>
+</section>
+<section class="controller">
+  <div class="container">
+<div class="row mt-5">
+<div class="mqscroller">
+  <div class="mqs-item"><img src="images/car3.jpg" class="img-fluid"> </div>
+  <div class="mqs-item"><img src="images/car2.jpg" class="img-fluid"> </div>
+  <div class="mqs-item"><img src="images/car.jpg" class="img-fluid"> </div>
+    <div class="mqs-item"><img src="images/car1.jpg" class="img-fluid" alt="Logo"></div>
+  <div class="mqs-item"><img src="images/car1.jpg" class="img-fluid" alt="Logo"></div>
+</div>
+</div>
+</div>
+</section>
+<section>
+  <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="steady moSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/spa.jpg" class="img-fluid"> </div>
+      <div class="swiper-slide"><img src="images/spa1.jpg" class="img-fluid"> </div>
+      <div class="swiper-slide"><img src="images/spa2.jpg" class="img-fluid"> </div>
+      <div class="swiper-slide"><img src="images/spa2.jpg" class="img-fluid"></div>
+      <div class="swiper-slide"><img src="images/spa2.jpg" class="img-fluid"></div>
+      <div class="swiper-slide"><img src="images/spa2.jpg" class="img-fluid"></div>
+      <div class="swiper-slide"><img src="images/spa2.jpg" class="img-fluid"></div>
+      <div class="swiper-slide"><img src="images/spa2.jpg" class="img-fluid"></div>
+      <div class="swiper-slide"><img src="images/spa2.jpg" class="img-fluid"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="cart">
+<div class="container">
+<div class="row">
+  <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+  <div class="col-md-3 text-center">
+    <img src="images/img_1.png" width="150px" height="150px">
+    <br>
+    product 1 - <strong>$10</strong>
+    <br>
+    <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/img_1.png">Add to Cart</button>
+    <a href="#" class="btn btn-info">Details</a>
+  </div>
+
+  <div class="col-md-3 text-center">
+    <img src="images/img_2.png" width="150px" height="150px">
+    <br>
+    product 2 - <strong>$20</strong>
+    <br>
+    <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="images/img_2.png">Add to Cart</button>
+    <a href="#" class="btn btn-info">Details</a>
+  </div>
+
+  <div class="col-md-3 text-center">
+    <img src="images/img_3.png" width="150px" height="150px">
+    <br>
+    product 3 - <strong>$30</strong>
+    <br>
+    <button class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1" data-image="images/img_3.png">Add to Cart</button>
+    <a href="#" class="btn btn-info">Details</a>
+  </div>
+
+  <div class="col-md-3 text-center">
+    <img src="images/img_4.png" width="150px" height="150px">
+    <br>
+    product 4 - <strong>$40</strong>
+    <br>
+    <button class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1" data-image="images/img_4.png">Add to Cart</button>
+    <a href="#" class="btn btn-info">Details</a>
+  </div>
+
+  <div class="col-md-3 text-center">
+    <img src="images/img_5.png" width="150px" height="150px">
+    <br>
+    product 5 - <strong>$50</strong>
+    <br>
+    <button class="btn btn-danger my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1" data-image="images/img_5.png">Add to Cart</button>
+    <a href="#" class="btn btn-info">Details</a>
+  </div>
+
+</div>
+
+</div>
+ </section>
+
+
+<section class="nivo">
+  <div class="container">
+<div class="row mt-5">
+ <div id="slider" class="nivoSlider"> 
+<img src="images/crop.jpg" data-thumb="images/toystory.jpg" alt="" /> 
+<img src="images/crop1.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" />
+<img src="images/crop2.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" /> 
+<img src="images/p1.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" /> 
+<img src="images/p2.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" /> 
+
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+
+
+<section class="come">
+  <div class="container">
+<div class="row">
+<div class="col-lg-12 mt-5">
+ <div class="card mx-auto" style="max-width: 500px;">
+      <div class="card-body">
+        <h4 class="card-title mb-4">Contact Us</h4>
+        <form id="myForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary button-loader" 
+            data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading...">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<section>
+  <div class="container">
+<div class="row" id="myList">
+ <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img src="images/bag.jpg" loading="lazy" class="img-fluid" alt="Bag">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img src="images/shoe.jpg" loading="lazy" class="img-fluid" alt="Shoe">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img src="images/sirt.jpg" loading="lazy" class="img-fluid" alt="Shirt">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img data-src="images/bag2.jpg" loading="lazy" class="img-fluid" alt="Bag">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img src="images/shoe2.jpg" loading="lazy" class="img-fluid" alt="Shoe">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img src="images/sirt.jpg" loading="lazy" class="img-fluid" alt="Shirt">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img src="images/bag3.jpg" loading="lazy" class="img-fluid" alt="Bag">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img src="images/shoe3.jpg" loading="lazy" class="img-fluid" alt="Shoe">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <img src="images/sirt.jpg" loading="lazy" class="img-fluid" alt="Shirt">
+  </div>
+
+
+
+
+</div>
+</div>
+</section>
+
+
+<div class="text-center mt-5">
+<a href="#" data-filter="all" class="btn btn-primary" >All</a>
+<a href="#" data-filter=".shoe" class="btn btn-success" >shoe</a>
+<a href="#" data-filter=".bag" class="btn btn-danger" >bag</a>
+<a href="#" data-filter=".shirt" class="btn btn-outline-danger" >shirt</a>
+<a href="#" class="btn btn-outline-danger" data-sort="order:asc">ASC</a>
+<a href="#" class="btn btn-outline-primary" data-sort="order:descending">DSC</a>
+
+</div>
+
+  <section class="roft wow animate__animated animate__slideInDown"data-wow-delay="0.3s" data-wow-duration="1.5s">
+    <div class="container">
+<div class="row mt-5" id="word">
+<div class="col-lg-3 mix shirt" data-order="1">
+<img src="images/shirt2.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3  mix shirt"data-order="2">
+<img src="images/sirt3.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix shirt"data-order="3">
+<img src="images/sirt4.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix shirt"data-order="4">
+<img src="images/sirt5.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix bag mt-3"data-order="5">
+<img src="images/bag.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix bag mt-3"data-order="6">
+<img src="images/bag1.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix bag mt-3"data-order="7">
+<img src="images/bag2.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix bag mt-3"data-order="8">
+<img src="images/bag3.jpg" class="img-fluid">
+</div>
+
+<div class="col-lg-3 mix shoe mt-3"data-order="9">
+<img src="images/shoe.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix shoe mt-3"data-order="10">
+<img src="images/shoe1.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix shoe mt-3">
+<img src="images/shoe2.jpg" class="img-fluid">
+</div>
+<div class="col-lg-3 mix shoe mt-3">
+<img src="images/shoe3.jpg" class="img-fluid">
+</div>
+
+</div>
+</div>
+  </section>
+	<section class="menu someBlock">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6 ">
+<div class="img mt-5"data-aos="fade-up"
+     data-aos-duration="3000">
+<img src="images/pic1.jpg" class="img-fluid">
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<div class="img mt-5"data-aos="fade-up"
+     data-aos-duration="3000">
+<img src="images/pic2.jpg" class="img-fluid">
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<div class="img mt-5"data-aos="fade-right"
+     data-aos-duration="3000">
+<img src="images/pic3.jpg" class="img-fluid">
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<div class="img mt-5"data-aos="fade-left"
+     data-aos-duration="3000">
+<img src="images/pic2.jpg" class="img-fluid">
+</div>
+</div>
+</section>
+
+
+
+
+
+</div>
+</div>
+
+<section class="hero ">
+	<div class="container">
+<div class="row mt-5 ">
+<div class="col-lg-12 col-12">
+
+<!-- Parallax Swiper -->
+<section class="swiper-container parallax-swiper">
+  <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="slide-content" data-swiper-parallax="-300">
+        <h2>Slide One</h2>
+        <p>This is the first slide with parallax effect.</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-content" data-swiper-parallax="-300">
+        <h2>Slide Two</h2>
+        <p>This is the second slide content.</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-content" data-swiper-parallax="-300">
+        <h2>Slide Three</h2>
+        <p>This is the third slide content.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination & Navigation -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</section>
+
+</div>
+	</div>
+</section>
+<section class="fade-section mt-5">
+  <div class="swiper fade-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide fade-slide" style="background-image: url('images/snow.jpg')">
+        <div class="fade-content">
+          <h2>Fade Slide 1</h2>
+          <p>This is the first fading slide.</p>
+        </div>
+      </div>
+      <div class="swiper-slide fade-slide" style="background-image: url('images/dc.jpg')">
+        <div class="fade-content">
+          <h2>Fade Slide 2</h2>
+          <p>This is the second fading slide.</p>
+        </div>
+      </div>
+      <div class="swiper-slide fade-slide" style="background-image: url('images/port.jpg')">
+        <div class="fade-content">
+          <h2>Fade Slide 3</h2>
+          <p>This is the third fading slide.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation & Pagination -->
+    <div class="swiper-button-next fade-next"></div>
+    <div class="swiper-button-prev fade-prev"></div>
+    <div class="swiper-pagination fade-pagination"></div>
+  </div>
+</section>
+<section class="home">
+ <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="text-center">
+<a href="#" data-filter="all" class="btn btn-primary" >All</a>
+<a href="#" data-filter=".snow" class="btn btn-success" >snow</a>
+<a href="#" data-filter=".web" class="btn btn-danger" >web design</a>
+<a href="#" data-filter=".men" class="btn btn-outline-danger" >men</a>
+<a href="#" data-filter=".child" class="btn btn-warning" >child</a>
+<a href="#" class="btn btn-outline-danger" data-sort="order:asc">ASC</a>
+<a href="#" class="btn btn-outline-primary" data-sort="order:descending">DSC</a>
+
+</div>
+</div>
+</div>
+<div class="row" id="world">
+<div class="col-lg-3 mix mt-3 snow" data-order="1">
+  <div class="d_img">
+    <img src="images/qatar1.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 web" data-order="2">
+  <div class="d_img">
+    <img src="images/q2.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 men" data-order="3">
+  <div class="d_img">
+    <img src="images/q3.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 snow" data-order="4">
+  <div class="d_img">
+    <img src="images/q4.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 men" data-order="5">
+  <div class="d_img">
+    <img src="images/q5.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 child" data-order="6">
+  <div class="d_img">
+    <img src="images/q6.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 child" data-order="7">
+  <div class="d_img">
+    <img src="images/q6.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 men" data-order="8">
+  <div class="d_img">
+    <img src="images/s3.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 men" data-order="9">
+  <div class="d_img">
+    <img src="images/s2.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+<div class="col-lg-3 mix mt-3 men" data-order="10">
+  <div class="d_img">
+    <img src="images/s1.jpg" class="img-fluid" alt="qatar1">
+  </div>
+</div>
+
+</div>
+
+ </div>
+</section>
+<section class="Box">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mt-3">
+        <div class="l_img">
+          <a href="images/fire1.jpg" data-lightbox="l_img" data-title="My caption">
+<img src="images/fire.jpg" class="img-fluid" alt="fire">
+</a>
+        </div>
+      </div>
+ <div class="col-lg-4 mt-3">
+        <div class="l_img">
+          <a href="images/fire1.jpg" data-lightbox="l_img" data-title="My caption">
+<img src="images/fire.jpg" class="img-fluid" alt="fire">
+</a>
+        </div>
+      </div>
+       <div class="col-lg-4 mt-3">
+        <div class="l_img">
+          <a href="images/fire4.jpg" data-lightbox="l_img" data-title="My caption">
+<img src="images/fire.jpg" class="img-fluid" alt="fire">
+</a>
+        </div>
+      </div>
+       <div class="col-lg-4 mt-3">
+        <div class="l_img">
+          <a href="images/fire5.jpg" data-lightbox="l_img" data-title="My caption">
+<img src="images/fire.jpg" class="img-fluid" alt="fire">
+</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="banner bg-dark">
+  <div class="container">
+<div class="row mt-4">
+<div class="col-lg-12 mt-3">
+<div class="wrapper">
+<div class="b_img">
+<img src="images/fin.jpg" class="w-100">
+</div>
+<div class="b_img">
+<img src="images/fin1.jpg" class="w-100">
+</div>
+<div class="b_img">
+<img src="images/fin2.jpg" class="w-100">
+</div>
+<div class="b_img">
+<img src="images/fin2.jpg" class="w-100">
+</div>
+<div class="b_img">
+<img src="images/fin2.jpg" class="w-100">
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+</section>
+
+<section class="data mt-4"data-aos="fade-up"
+     data-aos-duration="3000">>
+  <div class="container">
+<div class="row">
+<div class="col-lg-12">
+
+<table id="example" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011-04-25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011-07-25</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009-01-12</td>
+                <td>$86,000</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012-03-29</td>
+                <td>$433,060</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008-11-28</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012-12-02</td>
+                <td>$372,000</td>
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>2012-08-06</td>
+                <td>$137,500</td>
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>2010-10-14</td>
+                <td>$327,900</td>
+            </tr>
+            <tr>
+                <td>Colleen Hurst</td>
+                <td>Javascript Developer</td>
+                <td>San Francisco</td>
+                <td>39</td>
+                <td>2009-09-15</td>
+                <td>$205,500</td>
+            </tr>
+            <tr>
+                <td>Sonya Frost</td>
+                <td>Software Engineer</td>
+                <td>Edinburgh</td>
+                <td>23</td>
+                <td>2008-12-13</td>
+                <td>$103,600</td>
+            </tr>
+            <tr>
+                <td>Jena Gaines</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>30</td>
+                <td>2008-12-19</td>
+                <td>$90,560</td>
+            </tr>
+            <tr>
+                <td>Quinn Flynn</td>
+                <td>Support Lead</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2013-03-03</td>
+                <td>$342,000</td>
+            </tr>
+            <tr>
+                <td>Charde Marshall</td>
+                <td>Regional Director</td>
+                <td>San Francisco</td>
+                <td>36</td>
+                <td>2008-10-16</td>
+                <td>$470,600</td>
+            </tr>
+            <tr>
+                <td>Haley Kennedy</td>
+                <td>Senior Marketing Designer</td>
+                <td>London</td>
+                <td>43</td>
+                <td>2012-12-18</td>
+                <td>$313,500</td>
+            </tr>
+            <tr>
+                <td>Tatyana Fitzpatrick</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>19</td>
+                <td>2010-03-17</td>
+                <td>$385,750</td>
+            </tr>
+            <tr>
+                <td>Michael Silva</td>
+                <td>Marketing Designer</td>
+                <td>London</td>
+                <td>66</td>
+                <td>2012-11-27</td>
+                <td>$198,500</td>
+            </tr>
+            <tr>
+                <td>Paul Byrd</td>
+                <td>Chief Financial Officer (CFO)</td>
+                <td>New York</td>
+                <td>64</td>
+                <td>2010-06-09</td>
+                <td>$725,000</td>
+            </tr>
+            <tr>
+                <td>Gloria Little</td>
+                <td>Systems Administrator</td>
+                <td>New York</td>
+                <td>59</td>
+                <td>2009-04-10</td>
+                <td>$237,500</td>
+            </tr>
+            <tr>
+                <td>Bradley Greer</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>41</td>
+                <td>2012-10-13</td>
+                <td>$132,000</td>
+            </tr>
+            <tr>
+                <td>Dai Rios</td>
+                <td>Personnel Lead</td>
+                <td>Edinburgh</td>
+                <td>35</td>
+                <td>2012-09-26</td>
+                <td>$217,500</td>
+            </tr>
+            <tr>
+                <td>Jenette Caldwell</td>
+                <td>Development Lead</td>
+                <td>New York</td>
+                <td>30</td>
+                <td>2011-09-03</td>
+                <td>$345,000</td>
+            </tr>
+            <tr>
+                <td>Yuri Berry</td>
+                <td>Chief Marketing Officer (CMO)</td>
+                <td>New York</td>
+                <td>40</td>
+                <td>2009-06-25</td>
+                <td>$675,000</td>
+            </tr>
+            <tr>
+                <td>Caesar Vance</td>
+                <td>Pre-Sales Support</td>
+                <td>New York</td>
+                <td>21</td>
+                <td>2011-12-12</td>
+                <td>$106,450</td>
+            </tr>
+            <tr>
+                <td>Doris Wilder</td>
+                <td>Sales Assistant</td>
+                <td>Sydney</td>
+                <td>23</td>
+                <td>2010-09-20</td>
+                <td>$85,600</td>
+            </tr>
+            <tr>
+                <td>Angelica Ramos</td>
+                <td>Chief Executive Officer (CEO)</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009-10-09</td>
+                <td>$1,200,000</td>
+            </tr>
+            <tr>
+                <td>Gavin Joyce</td>
+                <td>Developer</td>
+                <td>Edinburgh</td>
+                <td>42</td>
+                <td>2010-12-22</td>
+                <td>$92,575</td>
+            </tr>
+            <tr>
+                <td>Jennifer Chang</td>
+                <td>Regional Director</td>
+                <td>Singapore</td>
+                <td>28</td>
+                <td>2010-11-14</td>
+                <td>$357,650</td>
+            </tr>
+            <tr>
+                <td>Brenden Wagner</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>28</td>
+                <td>2011-06-07</td>
+                <td>$206,850</td>
+            </tr>
+            <tr>
+                <td>Fiona Green</td>
+                <td>Chief Operating Officer (COO)</td>
+                <td>San Francisco</td>
+                <td>48</td>
+                <td>2010-03-11</td>
+                <td>$850,000</td>
+            </tr>
+            <tr>
+                <td>Shou Itou</td>
+                <td>Regional Marketing</td>
+                <td>Tokyo</td>
+                <td>20</td>
+                <td>2011-08-14</td>
+                <td>$163,000</td>
+            </tr>
+            <tr>
+                <td>Michelle House</td>
+                <td>Integration Specialist</td>
+                <td>Sydney</td>
+                <td>37</td>
+                <td>2011-06-02</td>
+                <td>$95,400</td>
+            </tr>
+            <tr>
+                <td>Suki Burks</td>
+                <td>Developer</td>
+                <td>London</td>
+                <td>53</td>
+                <td>2009-10-22</td>
+                <td>$114,500</td>
+            </tr>
+            <tr>
+                <td>Prescott Bartlett</td>
+                <td>Technical Author</td>
+                <td>London</td>
+                <td>27</td>
+                <td>2011-05-07</td>
+                <td>$145,000</td>
+            </tr>
+            <tr>
+                <td>Gavin Cortez</td>
+                <td>Team Leader</td>
+                <td>San Francisco</td>
+                <td>22</td>
+                <td>2008-10-26</td>
+                <td>$235,500</td>
+            </tr>
+            <tr>
+                <td>Martena Mccray</td>
+                <td>Post-Sales support</td>
+                <td>Edinburgh</td>
+                <td>46</td>
+                <td>2011-03-09</td>
+                <td>$324,050</td>
+            </tr>
+            <tr>
+                <td>Unity Butler</td>
+                <td>Marketing Designer</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>2009-12-09</td>
+                <td>$85,675</td>
+            </tr>
+            <tr>
+                <td>Howard Hatfield</td>
+                <td>Office Manager</td>
+                <td>San Francisco</td>
+                <td>51</td>
+                <td>2008-12-16</td>
+                <td>$164,500</td>
+            </tr>
+            <tr>
+                <td>Hope Fuentes</td>
+                <td>Secretary</td>
+                <td>San Francisco</td>
+                <td>41</td>
+                <td>2010-02-12</td>
+                <td>$109,850</td>
+            </tr>
+            <tr>
+                <td>Vivian Harrell</td>
+                <td>Financial Controller</td>
+                <td>San Francisco</td>
+                <td>62</td>
+                <td>2009-02-14</td>
+                <td>$452,500</td>
+            </tr>
+            <tr>
+                <td>Timothy Mooney</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>37</td>
+                <td>2008-12-11</td>
+                <td>$136,200</td>
+            </tr>
+            <tr>
+                <td>Jackson Bradshaw</td>
+                <td>Director</td>
+                <td>New York</td>
+                <td>65</td>
+                <td>2008-09-26</td>
+                <td>$645,750</td>
+            </tr>
+            <tr>
+                <td>Olivia Liang</td>
+                <td>Support Engineer</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>2011-02-03</td>
+                <td>$234,500</td>
+            </tr>
+            <tr>
+                <td>Bruno Nash</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>38</td>
+                <td>2011-05-03</td>
+                <td>$163,500</td>
+            </tr>
+            <tr>
+                <td>Sakura Yamamoto</td>
+                <td>Support Engineer</td>
+                <td>Tokyo</td>
+                <td>37</td>
+                <td>2009-08-19</td>
+                <td>$139,575</td>
+            </tr>
+            <tr>
+                <td>Thor Walton</td>
+                <td>Developer</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2013-08-11</td>
+                <td>$98,540</td>
+            </tr>
+            <tr>
+                <td>Finn Camacho</td>
+                <td>Support Engineer</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>2009-07-07</td>
+                <td>$87,500</td>
+            </tr>
+            <tr>
+                <td>Serge Baldwin</td>
+                <td>Data Coordinator</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>2012-04-09</td>
+                <td>$138,575</td>
+            </tr>
+            <tr>
+                <td>Zenaida Frank</td>
+                <td>Software Engineer</td>
+                <td>New York</td>
+                <td>63</td>
+                <td>2010-01-04</td>
+                <td>$125,250</td>
+            </tr>
+            <tr>
+                <td>Zorita Serrano</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>56</td>
+                <td>2012-06-01</td>
+                <td>$115,000</td>
+            </tr>
+            <tr>
+                <td>Jennifer Acosta</td>
+                <td>Junior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>43</td>
+                <td>2013-02-01</td>
+                <td>$75,650</td>
+            </tr>
+            <tr>
+                <td>Cara Stevens</td>
+                <td>Sales Assistant</td>
+                <td>New York</td>
+                <td>46</td>
+                <td>2011-12-06</td>
+                <td>$145,600</td>
+            </tr>
+            <tr>
+                <td>Hermione Butler</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2011-03-21</td>
+                <td>$356,250</td>
+            </tr>
+            <tr>
+                <td>Lael Greer</td>
+                <td>Systems Administrator</td>
+                <td>London</td>
+                <td>21</td>
+                <td>2009-02-27</td>
+                <td>$103,500</td>
+            </tr>
+            <tr>
+                <td>Jonas Alexander</td>
+                <td>Developer</td>
+                <td>San Francisco</td>
+                <td>30</td>
+                <td>2010-07-14</td>
+                <td>$86,500</td>
+            </tr>
+            <tr>
+                <td>Shad Decker</td>
+                <td>Regional Director</td>
+                <td>Edinburgh</td>
+                <td>51</td>
+                <td>2008-11-13</td>
+                <td>$183,000</td>
+            </tr>
+            <tr>
+                <td>Michael Bruce</td>
+                <td>Javascript Developer</td>
+                <td>Singapore</td>
+                <td>29</td>
+                <td>2011-06-27</td>
+                <td>$183,000</td>
+            </tr>
+            <tr>
+                <td>Donna Snider</td>
+                <td>Customer Support</td>
+                <td>New York</td>
+                <td>27</td>
+                <td>2011-01-25</td>
+                <td>$112,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</div>
+  </div>
+</section>
+
+<section class="sliding">
+  <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="owl-carousel">
+  <div class="item"><img src="images/vig.jpg" alt="Image 1"></div>
+  <div class="item"><img src="images/vig1.jpg" alt="Image 2"></div>
+  <div class="item"><img src="images/vig2.jpg" alt="Image 3"></div>
+</div>
+
+</div>
+</div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.nivo.slider.js"></script>
+<script src="res/jquery.nivo.slider.js"></script>
+<script src="res/jquery.star-rating.js"></script>
+
+<script src="res/button-inline-loader.js"></script>
+<script src="res/lazy-load.js"></script>
+<script src="res/progressBar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+<script src="res/slick/slick.min.js"></script>
+<script src="res/aos/jquery.preloadinator.min.js"></script>
+<script src="res/aos/jquery.preloader.min.js"></script>
+<script src="res/aos/lightbox.min.js"></script>
+<script src="res/jquery.imagecompare.min.js"></script>
+
+<script src="res/aos/mixitup.min.js"></script>
+<script src="res/aos/swiper-bundle.min.js"></script>
+<script src="res/aos/aos.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="res/dist/bs-layer.min.js"></script>
+<script src="res/jquery.mycart.js"></script>
+<script src="res/jquery.easyFilter.js"></script>
+<script src="res/mqscroller.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
